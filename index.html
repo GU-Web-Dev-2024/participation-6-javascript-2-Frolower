@@ -69,11 +69,11 @@
             console.log(guessed_number, number);
             if (attempts_num < 3) {
                 if (guessed_number > number) {
-                    console.log("Too high!");
+                    document.getElementById('message').innerHTML = "Too high";
                 } else if (guessed_number < number) {
-                    console.log("Too low!")
+                    document.getElementById('message').innerHTML = "Too low";
                 } else if (guessed_number == number) {
-                    console.log("You won!")
+                    document.getElementById('message').innerHTML = "You won!";
                     return;
                 }
             }  
